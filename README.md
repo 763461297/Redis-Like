@@ -5,7 +5,7 @@
     OS         : Ubuntu 14.04  
 *\*The server **must** open cookies and session*
 
-## **APIs**##
+## **APIs** ##
 - **Get**  
 > 1.Get the value according to the specified key .  
 >> `http://localhost/get.php?key=[k_name]`  
@@ -26,7 +26,7 @@
 
 *\*All requests are used **HTTP-GET**.*
 
-## **Notice**##
+## **Notice** ##
 For data persistence, my idea is to **serialize the entire rb-tree** to a local file each time the rb-tree updated and reload the file in an unexpected crash or reboot, and deserialize the tree to memory.  
 Because of the time constraints, the RB-tree only to implement the **insert** and **query**, and didn't implement data persistence, the RB-tree temporarily in the session.  
 ...  
